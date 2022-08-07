@@ -21,4 +21,17 @@ func main() {
 	for i := 1; i <= 10; i++ {
 		fmt.Println("3 *", i, "=", 3*i)
 	}
+
+	fmt.Println("4.Напишите программу, где пользователь вводит любое целое положительное число. А программа суммирует все числа от 1 до введенного пользователем числа.")
+	var number int
+
+	fmt.Println("Вводите любое целое положительное число")
+	fmt.Scanln(&number)
+
+	result := 0
+	for i := 1; i <= number; i++ {
+		result = result + i
+	}
+	fmt.Println(result)
+
 }
